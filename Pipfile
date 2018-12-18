@@ -1,0 +1,21 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+django = "*"
+django-extensions = "*"
+werkzeug = "*"
+mimesis = "*"
+"psycopg2" = "*"
+django-rest-framework="*"
+django-model-utils="*"
+ipython="*"
+django-allauth="*"
+
+[dev-packages]
+mimesis = "*"
+
+[requires]
+python_version = "3.7"
