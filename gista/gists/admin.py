@@ -1,3 +1,16 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Gist
+
+
+@admin.register(Gist)
+class GistAdmin(admin.ModelAdmin):
+    list_display = (
+        'id',
+        'created',
+        'modified',
+        'author',
+        'body',
+        'language',
+    )
+    list_filter = ('created', 'modified', 'author')
